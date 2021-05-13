@@ -1,4 +1,4 @@
-import SearchResultContainer from '../SearchResultContainer';
+import SearchResultContainer from '../search/SearchResultContainer';
 import React from 'react';
 import {Animated} from 'react-animated-css';
 

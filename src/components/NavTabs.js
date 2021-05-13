@@ -9,7 +9,17 @@ function NavTabs() {
 
   return (
 		<ul className="nav nav-tabs py-1">
-			<li className="nav-item">
+			<li className="nav-item align-items-center">
+				<Link
+					to="/table"
+					className={
+						location.pathname === '/table' ? 'nav-link active' : 'nav-link'
+					}
+				>
+					<i className="fas fa-table"></i> Table
+				</Link>
+			</li>
+			<li className="nav-item align-items-center">
 				<Link
 					to="/search"
 					className={
@@ -20,7 +30,7 @@ function NavTabs() {
 				</Link>
 			</li>
 
-			<li className="nav-item">
+			<li className="nav-item align-items-center">
 				<Link
 					to="/"
 					className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
@@ -28,18 +38,10 @@ function NavTabs() {
 					<i className="fas fa-info-circle"></i> About
 				</Link>
 			</li>
-			<li className="nav-item rounded p-0 px-2">
-				<i className="fab fa-react fa-spin text-xl text-info mt-1"></i>
-				<i>React UI</i>
-			</li>
-			<li className="nav-item rounded p-0 px-1">
-				<i className="fab fa-github text-xl text-secondary mt-1"></i>
-				<i>
-					<small>
-						<a href="attila5287.github.io/"></a>
-						attila5287
-					</small>
-				</i>
+			<li className="nav-item align-items-center">
+				<Link to="https://github.com/attila5287/" className="nav-link">
+					<i className="fab fa-github"></i> attila5287
+				</Link>
 			</li>
 		</ul>
 	);
