@@ -1,7 +1,3 @@
-import React from 'react'
-
-
-
 const TableHeader = ( props ) => {
   //  console.log(`props`, props)
    return (

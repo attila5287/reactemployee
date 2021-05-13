@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
