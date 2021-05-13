@@ -27,8 +27,7 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 [badge]: https://raw.githubusercontent.com/attila5287/img_readme/main/new/react_badge_96.png
  "react badge"
 ![react badge][badge]
-
-
+---
 
 ## Acceptance Criteria
 
@@ -39,9 +38,6 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 - [ ] - Sort the table by at least one category
 
 - [ ] - Filter the users by at least one property.
-
-
----
 
 | ![dev]( https://raw.githubusercontent.com/attila5287/img_readme/main/all/dev.jpg "dev-icon") | About Developer | 
 | -------------   | -------------: |
