@@ -4,19 +4,17 @@ const helpers = {
     ( json.results ).forEach( ( r, i ) => {
       // console.log(`r`, r)
       let row = {
+				Country: r.location.country,
 				Picture: r.picture.thumbnail,
-				FullName: Object.keys(r.name)
-					.map((k) => r.name[k])
-					.join(' '),
-				Gender: r.gender,
-        Address: [
-          r.location.street.number
-          +' ' +r.location.street.name,
-          r.location.city,
-          r.location.state,
-          r.location.country,
-          r.location.postcode,
-        ].join( ', ' ),
+				FirstName: r.name.first,
+				LastName: r.name.last,
+				Address: [
+					r.location.street.number + ' ' + r.location.street.name,
+					r.location.city,
+					r.location.state,
+					r.location.country,
+					r.location.postcode
+				].join(', '),
 				Email: r.email,
 				Age: r.dob.age,
 				Cell: r.cell,
@@ -31,9 +29,10 @@ const helpers = {
     return res;
 	},
 	headings: [
+		'Country',
 		'Picture',
-		'FullName',
-		'Gender',
+		'FirstName',
+		'LastName',
 		'Address',
 		'Email',
 		'Age',

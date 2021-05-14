@@ -9,20 +9,25 @@ import API from '../../utils/API';
 function TableAll() {
 	const [data, setData] = useState(helpers.prep(sample));
 
-	fetch = (size) => {
-		API.search(size)
-			.then((res) => setData(helpers.prep(res)))
-			.catch((err) => console.log(err));
-	};
-	console.log(data);
 	return (
 		<div className="container text-center">
-			<Table responsive striped hover variant="dark">
+			<Table responsive striped bordered hover variant="dark">
 				<TableHeader headings={helpers.headings} />
-				<TableBody rows={helpers.prep(sample)} />
+				<TableBody rows={data} />
 			</Table>
 		</div>
 	);
 }
+// import React, { Component } from 'react'
+
+// export default class TableAll extends Component {
+//   render() {
+//     return (
+//       <div>
+        
+//       </div>
+//     )
+//   }
+// }
 
 export default TableAll;

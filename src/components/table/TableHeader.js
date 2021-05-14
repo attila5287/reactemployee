@@ -8,6 +8,7 @@ const TableHeader = ( props ) => {
 					</th>
 
 					{props.headings.map((th, index) => (
+            
 						<th className="bg-info text-lg" key={index}>
 							{th}
 						</th>
