@@ -35,7 +35,18 @@ const helpers = {
 		'Age',
 		'Cell',
 		'Phone',
-	],
+  ],
+  headIcons: {
+    'Picture' : 'fas fa-image text-3xl',
+    'FullName' : 'fas fa-id-card text-3xl',
+    'Address' : 'fas fa-map-marked-alt text-3xl',
+    'Country' : 'fas fa-flag text-3xl',
+    'Email' : 'fas fa-envelope text-3xl',
+    'Age' : 'fas fa-birthday-cake text-3xl',
+    'Cell' : 'fas fa-mobile-alt text-3xl',
+    'Phone' : 'fas fa-phone text-3xl',
+    
+  }
 };
 
 export default helpers;

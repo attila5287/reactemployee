@@ -3,8 +3,9 @@ function TableBody ( props ) {
 		<tbody>
 			{props.rows.map((row, index) => (
 				<tr key={index}>
-					<th scope="row" className="text-sm align-middle">
-							<b className="px-2 py-1 rounded-3xl bg-secondary text-dark">{index + 1}</b>
+          <th scope="row" className="text-sm align-middle">
+            <i className="text-xl text-secondary fas fa-user-tag"></i>
+							<b className="text-secondary">{index + 1}</b>
 					</th> 
 					{Object.keys(row).map((key, idx) => {
 						if (key == 'Picture') {

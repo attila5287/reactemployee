@@ -47,7 +47,7 @@ a.post-title:focus {
 .mini {
   width: 100%;
   margin: auto;
-  max-width: 600px;
+  max-width: 550px;
   padding: 0.1rem 0.1rem 0.1rem 0.1rem;
 }
 
@@ -55,6 +55,10 @@ a.post-title:focus {
   font-size: 0.80rem;
 }
 
+
+.text-sm {
+  font-size: 0.85rem;
+}
 .text-reg {
   font-size: 1.0rem;
 }
@@ -111,8 +115,12 @@ a.post-title:focus {
   border-width: 0.5rem;
 }
 
+.opac-30 {
+  opacity: 30%;
+}
+
 .opac-50 {
-  opacity: 70%;
+  opacity: 50%;
 }
 
 .opac-70 {
@@ -144,10 +152,6 @@ a.post-title:focus {
 
 .card-columns {
   column-count: 4;
-}
-
-.text-sm {
-  font-size: 0.85rem;
 }
 
 .img-mini {
@@ -201,18 +205,17 @@ a.post-title:focus {
   max-width: 600px;
   padding: 0.1rem 0.1rem 0.1rem 0.1rem;
 }
-.text-lg{
-  font-size: 1.375rem;
-}
-.text-xl{
-  font-size: 1.75rem;
-}
-.text-2xl{
-  font-size: 2.0rem;
-}
 .h1{
   font-size: 2.50rem;
 }
 .fa-stack{
   font-size: 1.50rem;
+}
+
+
+thead th:first-child {
+  border-radius: 1.75rem 0 0 0;
+}
+thead th:last-child {
+  border-radius: 0 1.75rem  0 0;
 }

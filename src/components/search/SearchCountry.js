@@ -4,27 +4,23 @@ import { Animated } from 'react-animated-css';
 function SearchCountry(props) {
 	return (
 		<Animated
-			animationIn="bounceInLeft"
+			animationIn="bounceInRight"
 			animationInDelay={1500}
 			isVisible={true}
 			className="mini"
 		>
-			<form className="row align-items-center">
-				<div className="form-group col-3 rounded p-1 mb-2">
-					<p className="text-left">
-						<i className="fas fa-flag text-xl mx-1"></i>
-						Search by country
-					</p>
+			<form className="row align-items-start">
+				<div className="form-group col-2">
+					<h1 className="fas fa-flag fa-pull-right"></h1>
 				</div>
-				<div className="form-group col-9 rounded p-1 mb-2">
+				<div className="form-group col rounded p-1 mb-2">
 					<input
 						onChange={props.handleInputChange}
 						value={props.search['Country']}
 						name="Country"
 						type="text"
-						className="form-control shadow-lg"
-						placeholder="Type here, default puggle"
-						id="search"
+						className="form-control form-control-lg py-1"
+						placeholder="by country"
 					/>
 				</div>
 			</form>

@@ -16,7 +16,13 @@ function NavTabs() {
 						location.pathname === '/table' ? 'nav-link active' : 'nav-link'
 					}
 				>
-					<i className="fas fa-table"></i>
+					<i className="fas fa-table mx-1"></i>
+					<span className="text-md">
+            <i>
+            <b>Table</b>
+              
+            </i>
+					</span>
 				</Link>
 			</li>
 
@@ -25,15 +31,13 @@ function NavTabs() {
 					to="/"
 					className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
 				>
-					<i className="fas fa-info-circle"></i> 
+					<i className="fas fa-info-circle"></i>
 				</Link>
 			</li>
 			<li className="nav-item align-items-center">
 				<Link to="https://github.com/attila5287/" className="nav-link">
-          <i className="fab fa-github mx-1"></i>
-          <span className="text-sm">
-          attila5287
-          </span>
+					<i className="fab fa-github mx-1"></i>
+					<span className="text-sm">attila5287</span>
 				</Link>
 			</li>
 		</ul>
