@@ -66,6 +66,7 @@ function TableAuto() {
     setRows( filtered );
     console.log( `filtered.length`, filtered.length );
     if (Object.keys(search).map(k=>search[k]).join('').length<1 ) {
+      setRows( [] );
       setRows( initial );
 
     }
