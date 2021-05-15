@@ -41,7 +41,7 @@ function NavTabs() {
 			<li className="nav-item align-items-center">
 				<Link to="https://github.com/attila5287/" className="nav-link">
           <i className="fab fa-github mx-1"></i>
-          <span class="text-sm">
+          <span className="text-sm">
           attila5287
           </span>
 				</Link>

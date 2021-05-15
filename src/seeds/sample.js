@@ -1,4 +1,4 @@
-const sample = {
+const sample ={data: {
 	results: [
 		{
 			gender: 'male',
@@ -1147,6 +1147,6 @@ const sample = {
 		page: 1,
 		version: '1.3'
 	}
-};
+}};
 
 export default sample;

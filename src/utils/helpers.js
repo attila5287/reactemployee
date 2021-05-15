@@ -1,7 +1,7 @@
 const helpers = {
   prep: ( json ) => {
     let res= [];
-    ( json.results ).forEach( ( r, i ) => {
+    ( json.data.results ).forEach( ( r, i ) => {
       // console.log(`r`, r)
       let row = {
 				Country: r.location.country,
