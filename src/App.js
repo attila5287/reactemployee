@@ -8,8 +8,8 @@ function App() {
   return (
 		<Router>
 			<NavTabs />
-			<Route exact path="/" component={About} />
-			<Route exact path="/table" component={TableAuto} />
+			<Route exact path="/about" component={About} />
+			<Route exact path="/" component={TableAuto} />
 		</Router>
 	);
 }
