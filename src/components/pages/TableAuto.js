@@ -17,12 +17,19 @@ function TableAuto() {
     setSearch] = useState({FullName: '', Address: '', Country: ''});
   const [rows,
     setRows] = useState([]);
-
+  const [initial,
+    setInitial] = useState([]);
   useEffect(() => {
     API
-      .fetch(8)
+      .fetch(10)
       .then((res) => {
-        setRows(helpers.prep(res));
+        setRows( helpers.prep( res ) );
+        console.log( `rows.length`, rows.length )
+        if (rows.length==10) {
+          setInitial( helpers.prep( res ) );
+          console.log( `>> ---initial`, initial );
+
+        }
       })
       .catch((err) => console.log(err));
   }, [search]);
@@ -47,14 +54,22 @@ function TableAuto() {
     const name = event.target.name;
     // console.log( `>> name`, name );
 
-    const value = event.target.value;
+    const value = event.target.value.trim();
     console.log(`>> value`, value);
 
+    setSearch(search);
     search[name] = value;
     console.log(`search`, search)
+    const filtered = rows.filter((row) =>
+			row[name].toLowerCase().includes(value.toLowerCase())
+		);
+    setRows( filtered );
+    console.log( `filtered.length`, filtered.length );
+    if (Object.keys(search).map(k=>search[k]).join('').length<1 ) {
+      setRows( initial );
 
-    setSearch(search);
-    setRows(rows.filter((row) => row[name].toLowerCase().includes(value.toLowerCase())));
+    }
+    
   };
 
   return (
