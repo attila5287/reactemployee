@@ -8,7 +8,7 @@ function TableBody ( props ) {
 							<b className="text-secondary">{index + 1}</b>
 					</th> 
 					{Object.keys(row).map((key, idx) => {
-						if (key == 'Picture') {
+						if (key === 'Picture') {
 							return (
 								<td
 									key={idx}

@@ -27,6 +27,22 @@ function TableAuto() {
       .catch((err) => console.log(err));
   }, [search]);
 
+  const handleSortBy = (event) => {
+    const d = event.target.dataset.sortby;
+    console.log( `>> sort by `, d );
+    
+    setRows(rows.sort(function (a, b) {
+			if (a[d] < b[d]) {
+				return -1;
+			}
+			if (a[d] > b[d]) {
+				return 1;
+			} else {
+				return 0;
+			}
+		}));
+
+  }
   const handleInputChange = (event) => {
     const name = event.target.name;
     // console.log( `>> name`, name );
@@ -75,22 +91,26 @@ function TableAuto() {
 					<div className="col-7">
 						<SearchFullName
 							search={search['FullName']}
-							handleInputChange={(d) => handleInputChange(d)}
+							handleInputChange={(event) => handleInputChange(event)}
 						/>
 						<SearchAddress
 							search={search['Address']}
-							handleInputChange={(d) => handleInputChange(d)}
+							handleInputChange={(event) => handleInputChange(event)}
 						/>
 						<SearchCountry
 							search={search['Country']}
-							handleInputChange={(d) => handleInputChange(d)}
+							handleInputChange={(event) => handleInputChange(event)}
 						/>
 					</div>
 				</div>
 			</div>
 			<div className="container text-center m-0">
-				<Table responsive small striped bordered hover variant="dark" className="m-0">
-					<TableHeader headings={helpers.headings} icons={helpers.headIcons} />
+				<Table responsive striped bordered hover variant="dark" className="m-0">
+					<TableHeader
+						headings={helpers.headings}
+						icons={helpers.headIcons}
+						handleSortBy={(event) => handleSortBy(event)}
+					/>
 					<TableBody rows={rows} />
 				</Table>
 			</div>

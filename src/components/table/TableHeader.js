@@ -9,10 +9,15 @@ const TableHeader = ( props ) => {
 
 					{props.headings.map((th, index) => (
 						<th className="bg-info text-light" key={index}>
-							<button className="btn btn-primary py-2" type="button" name={th} onClick={props.handleSortBy}>
-								<span className="text-nowrap text-right">
-									<i className={props.icons[th]}></i>
-									<i className="fas fa-sort text-lg mx-1"></i>
+							<button
+								className="btn btn-primary py-2"
+								type="button"
+								data-sortby={th}
+								onClick={props.handleSortBy}
+							>
+								<span data-sortby={th} className="text-nowrap text-right">
+									<i data-sortby={th} className={props.icons[th]}></i>
+									<i data-sortby={th} className="fas fa-sort text-lg mx-1"></i>
 								</span>
 							</button>
 							<br />
