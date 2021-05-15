@@ -11,7 +11,7 @@ function TableBody ( props ) {
 							return (
 								<td
 									key={idx}
-									className="align-middle text-secondary text-sm py-1"
+									className="align-middle text-secondary py-1"
 								>
 									<img
 										src={row[key]}
@@ -24,7 +24,7 @@ function TableBody ( props ) {
 							return (
 								<td
 									key={idx}
-									className="align-middle text-secondary text-sm py-1"
+									className="align-middle text-secondary py-1"
 								>
 									{row[key]}
 								</td>

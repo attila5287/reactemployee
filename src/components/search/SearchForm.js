@@ -23,12 +23,6 @@ function SearchForm(props) {
 						placeholder="Type here, default puggle"
 						id="search"
 					/>
-					<button
-						onClick={props.handleFormSubmit}
-						className="btn btn-primary btn-lg w-100 mt-3"
-					>
-						Search
-					</button>
 				</div>
 			</form>
 		</Animated>

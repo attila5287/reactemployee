@@ -6,8 +6,7 @@ const helpers = {
       let row = {
 				Country: r.location.country,
 				Picture: r.picture.thumbnail,
-				FirstName: r.name.first,
-				LastName: r.name.last,
+				FullName: r.name.first + ' '  + r.name.last,
 				Address: [
 					r.location.street.number + ' ' + r.location.street.name,
 					r.location.city,
@@ -31,8 +30,7 @@ const helpers = {
 	headings: [
 		'Country',
 		'Picture',
-		'FirstName',
-		'LastName',
+		'FullName',
 		'Address',
 		'Email',
 		'Age',
