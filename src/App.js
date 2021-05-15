@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import About from "./components/pages/About";
 import Search from './components/pages/Search';
-import Table from './components/pages/Table';
+import TableAuto from './components/pages/TableAuto';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 			<NavTabs />
 			<Route exact path="/" component={About} />
 			<Route exact path="/search" component={Search} />
-			<Route exact path="/table" component={Table} />
+			<Route exact path="/table" component={TableAuto} />
 		</Router>
 	);
 }

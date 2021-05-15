@@ -5,11 +5,11 @@ function SearchForm(props) {
 	return (
 		<Animated
 			animationIn="bounceInLeft"
-			animationInDelay={2000}
+			animationInDelay={500}
 			isVisible={true}
 		>
 			<form>
-				<div className="form-group rounded p-1 mb-2">
+				<div className="mini form-group rounded p-1 mb-2">
 					<p className="text-left text-light">
 						<i className="fas fa-search-plus"></i>
 						Search dog images by breed{' '}
