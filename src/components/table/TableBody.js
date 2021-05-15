@@ -2,7 +2,7 @@ function TableBody ( props ) {
   return (
 		<tbody>
 			{props.rows.map((row, index) => (
-				<tr key={index}>
+				<tr key={index} className="py-0">
           <th scope="row" className="text-sm align-middle">
             <i className="text-xl text-secondary fas fa-user-tag"></i>
 							<b className="text-secondary">{index + 1}</b>

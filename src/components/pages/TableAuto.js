@@ -18,7 +18,13 @@ function TableAuto() {
   const [rows,
     setRows] = useState([]);
   const [initial,
-    setInitial] = useState([]);
+    setInitial ] = useState( [] );
+  
+  
+  const [sorted,
+    setSorted ] = useState( false );
+  
+  
   useEffect(() => {
     API
       .fetch(10)
@@ -34,30 +40,40 @@ function TableAuto() {
           console.log( `>> ---initial`, initial );
           if ( initial.length<1 && org.length ===10) {
             setInitial( org );
+            console.log( `>> ---initial`, initial );
             
           }
 
         }
       })
       .catch((err) => console.log(err));
-  }, [search]);
+  }, []);
 
-  const handleSortBy = (event) => {
-    const d = event.target.dataset.sortby;
-    console.log( `>> sort by `, d );
-    
-    setRows(rows.sort(function (a, b) {
-			if (a[d] < b[d]) {
+  const handleSortBy = ( event ) => {
+    const sortField = event.target.dataset.sortby;
+    console.log(`>> sort by `, sortField);
+    const sortedRows = rows.sort((a, b) => {
+			if (b[sortField] > a[sortField]) {
 				return -1;
 			}
-			if (a[d] > b[d]) {
+			if (a[sortField] > b[sortField]) {
 				return 1;
-			} else {
-				return 0;
 			}
-		}));
+			return 0;
+		});
+    console.log(`sorted`, sortedRows);
+    if (sorted) {
+      setRows( sortedRows )
+      setSorted( false )
+    } else
+    setRows( sortedRows )
+    setSorted( true )
+    {
+      
+    }
 
-  }
+  };
+  
   const handleInputChange = (event) => {
     const name = event.target.name;
     // console.log( `>> name`, name );
@@ -86,7 +102,7 @@ function TableAuto() {
   return (
 		<div>
 			<div className="mini">
-				<div className="row align-items-center no-gutters">
+				<div className="row align-items-center">
 					<div className="col-2 align-items-center text-center">
 						<Animated
 							animationIn="bounceInLeft"
@@ -114,7 +130,7 @@ function TableAuto() {
 							<i className="align-middle text-4xl fas fa-sitemap fa-rotate-270 opac-50"></i>
 						</Animated>
 					</div>
-					<div className="col-7">
+					<div className="col-7 offset-1">
 						<SearchFullName
 							search={search['FullName']}
 							handleInputChange={(event) => handleInputChange(event)}
