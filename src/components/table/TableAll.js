@@ -18,16 +18,4 @@ function TableAll() {
 		</div>
 	);
 }
-// import React, { Component } from 'react'
-
-// export default class TableAll extends Component {
-//   render() {
-//     return (
-//       <div>
-        
-//       </div>
-//     )
-//   }
-// }
-
 export default TableAll;

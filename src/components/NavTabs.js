@@ -8,7 +8,7 @@ function NavTabs() {
   const location = useLocation();
 
   return (
-		<ul className="nav nav-tabs py-1">
+		<ul className="nav nav-tabs py-0 text-sm">
 			<li className="nav-item align-items-center">
 				<Link
 					to="/table"
@@ -16,7 +16,7 @@ function NavTabs() {
 						location.pathname === '/table' ? 'nav-link active' : 'nav-link'
 					}
 				>
-					<i className="fas fa-table"></i> Table
+					<i className="fas fa-table"></i>
 				</Link>
 			</li>
 			<li className="nav-item align-items-center">
@@ -26,7 +26,7 @@ function NavTabs() {
 						location.pathname === '/search' ? 'nav-link active' : 'nav-link'
 					}
 				>
-					<i className="fas fa-search"></i> Search
+					<i className="fas fa-search"></i>
 				</Link>
 			</li>
 
@@ -35,12 +35,15 @@ function NavTabs() {
 					to="/"
 					className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
 				>
-					<i className="fas fa-info-circle"></i> About
+					<i className="fas fa-info-circle"></i> 
 				</Link>
 			</li>
 			<li className="nav-item align-items-center">
 				<Link to="https://github.com/attila5287/" className="nav-link">
-					<i className="fab fa-github"></i> attila5287
+          <i className="fab fa-github mx-1"></i>
+          <span class="text-sm">
+          attila5287
+          </span>
 				</Link>
 			</li>
 		</ul>
