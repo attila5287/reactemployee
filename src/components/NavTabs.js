@@ -18,10 +18,6 @@ function NavTabs() {
 				>
 					<i className="fas fa-table mx-1"></i>
 					<span className="text-md">
-            <i>
-            <b>Table</b>
-              
-            </i>
 					</span>
 				</Link>
 			</li>
