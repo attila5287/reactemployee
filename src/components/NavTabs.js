@@ -19,16 +19,6 @@ function NavTabs() {
 					<i className="fas fa-table"></i>
 				</Link>
 			</li>
-			<li className="nav-item align-items-center">
-				<Link
-					to="/search"
-					className={
-						location.pathname === '/search' ? 'nav-link active' : 'nav-link'
-					}
-				>
-					<i className="fas fa-search"></i>
-				</Link>
-			</li>
 
 			<li className="nav-item align-items-center">
 				<Link
