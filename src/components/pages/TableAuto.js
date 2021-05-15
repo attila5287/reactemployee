@@ -22,12 +22,20 @@ function TableAuto() {
   useEffect(() => {
     API
       .fetch(10)
-      .then((res) => {
-        setRows( helpers.prep( res ) );
+      .then( ( res ) => {
+        console.log( `res`, res )
+        const org = helpers.prep(res);
+        setRows( org );
+        console.log( `org.length`, org.length )
         console.log( `rows.length`, rows.length )
-        if (rows.length==10) {
-          setInitial( helpers.prep( res ) );
+        if (org.length===10) {
+          setInitial( org );
+          console.log( `>> ---org`, org );
           console.log( `>> ---initial`, initial );
+          if ( initial.length<1 && org.length ===10) {
+            setInitial( org );
+            
+          }
 
         }
       })
@@ -65,7 +73,9 @@ function TableAuto() {
 		);
     setRows( filtered );
     console.log( `filtered.length`, filtered.length );
-    if (Object.keys(search).map(k=>search[k]).join('').length<1 ) {
+    if ( Object.keys( search ).map( k => search[ k ] ).join( '' ) === '' )
+    {
+      console.log(`search`, search)
       setRows( [] );
       setRows( initial );
 
