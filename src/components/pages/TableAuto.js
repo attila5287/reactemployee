@@ -73,32 +73,51 @@ function TableAuto() {
     }
 
   };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  }
-
-
-  const handleInputChange = ( event ) => {
-    event.preventDefault();
+  
+  const handleInputChange = (event) => {
     const name = event.target.name;
     // console.log( `>> name`, name );
 
     const value = event.target.value.trim();
     console.log(`>> value`, value);
+    const filterIcon = document.getElementById('filterIcon');
+    const filterBy = document.getElementById('filterBy');
+    const searchFor = document.getElementById( 'searchFor' );
+    
+    
+    filterIcon.className = '';
+    filterIcon.className = helpers.headIcons[name].slice(0, 
+			helpers.headIcons[name].length-9);
 
+    
+    
+    filterBy.innerText = '';
+    filterBy.innerText = name;
+
+    searchFor.classList.remove('d-none');
+    searchFor.innerText = '';
+    
     setSearch(search);
     search[name] = value;
     console.log(`search`, search)
     const filtered = rows.filter((row) =>
-			row[name].toLowerCase().includes(value.toLowerCase())
+    row[name].toLowerCase().includes(value.toLowerCase())
 		);
     setRows( filtered );
+    
+    searchFor.innerText = value + '(' + filtered.length + ')';
+    
     console.log( `filtered.length`, filtered.length );
+    
+    
     if ( Object.keys( search ).map( k => search[ k ] ).join( '' ) === '' )
     {
       console.log(`search`, search)
       setRows( [] );
       setRows( initial );
+      searchFor.classList.add = 'd-none';
+
+      
 
     }
     
@@ -106,41 +125,52 @@ function TableAuto() {
 
   return (
 		<div>
-			<div className="">
-				<div className="d-flex flex-row justify-content-center align-items-center">
-					<div className="logo mx-5">
+			<div className='text-center'>
+				<div className='row align-items-center'>
+					<div className='col-4 text-right'>
 						<Animated
-							animationIn="fadeInLeft"
+							animationIn='fadeInLeft'
 							isVisible={true}
 							animationInDelay={750}
+							className='text-right'
 						>
-							<i className="text-info opac-50 fas fa-filter text-2xl"></i>
-							<p className="text-lg mb-0">
-								<b> Filter By </b>
-							</p>
+							<h1 className='title text-info opac-50'>
+                <span className='fas fa-filter' id='filterIcon'>
+                </span>
+							</h1>
+							<h2 className='text-lg mb-0 text-right'>
+								<b> Filter By: </b>
+								<b id='filterBy'> </b>
+							</h2>
+							<h1
+								className='mt-1 bg-info rounded-xl text-light p-1 d-none'
+								id='searchFor'
+							></h1>
 						</Animated>
+						<Animated
+							animationIn='bounceInDown'
+							animationInDelay={500}
+							isVisible={true}
+						></Animated>
 					</div>
-					<div className="search-forms">
+					<div className='col-8 text-left'>
 						<SearchFullName
 							search={search['FullName']}
 							handleInputChange={(event) => handleInputChange(event)}
-							handleSubmit={(event) => handleSubmit(event)}
-              />
+						/>
 						<SearchAddress
 							search={search['Address']}
 							handleInputChange={(event) => handleInputChange(event)}
-							handleSubmit={(event) => handleSubmit(event)}
-              />
+						/>
 						<SearchCountry
 							search={search['Country']}
 							handleInputChange={(event) => handleInputChange(event)}
-							handleSubmit={(event) => handleSubmit(event)}
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="container text-center m-0">
-				<Table striped bordered hover variant="info" className="m-0">
+			<div className='container text-center m-0'>
+				<Table striped bordered hover variant='info' className='m-0'>
 					<TableHeader
 						headings={helpers.headings}
 						icons={helpers.headIcons}

@@ -11,7 +11,7 @@ function SearchCountry(props) {
 		>
 			<form className="row align-items-start">
 				<div className="form-group col-2">
-					<h4 className="fas fa-flag fa-pull-right"></h4>
+					<h4 className="fas fa-flag"></h4>
 				</div>
 				<div className="form-group col rounded">
 					<input
@@ -20,7 +20,7 @@ function SearchCountry(props) {
 						value={props.search['Country']}
 						name="Country"
 						type="text"
-						className="form-control form-control-sm"
+						className="form-control form-control-lg"
 						placeholder="by country"
 					/>
 				</div>

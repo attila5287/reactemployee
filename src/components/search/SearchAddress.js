@@ -9,9 +9,9 @@ function SearchAddress(props) {
 			isVisible={true}
 			className="mini"
 		>
-			<form className="row align-items-start">
+			<form className="row ">
 				<div className="form-group col-2">
-					<h4 className="fas fa-map-marked-alt fa-pull-right"></h4>
+					<h4 className="fas fa-map-marked-alt"></h4>
 				</div>
 				<div className="form-group col rounded">
 					<input
@@ -20,7 +20,7 @@ function SearchAddress(props) {
 						value={props.search['Address']}
 						name="Address"
 						type="text"
-						className="form-control form-control-sm"
+						className="form-control form-control-lg"
 						placeholder="by address"
 					/>
 				</div>

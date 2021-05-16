@@ -11,7 +11,7 @@ function SearchFullName(props) {
 		>
 			<form className="row align-items-start">
 				<div className="form-group col-2">
-					<h4 className="fas fa-id-card fa-pull-right"></h4>
+					<h4 className="fas fa-id-card"></h4>
 				</div>
 				<div className="form-group col rounded">
 					<input
@@ -20,7 +20,7 @@ function SearchFullName(props) {
 						value={props.search['FullName']}
 						name="FullName"
 						type="text"
-						className="form-control form-control-sm"
+						className="form-control form-control-lg"
 						placeholder="by full name"
 					/>
 				</div>
