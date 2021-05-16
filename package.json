@@ -1,6 +1,10 @@
 {
 	"name": "app",
+<<<<<<< HEAD
 "homepage": "https://attila5287.github.io/reactemployee/",
+=======
+"homepage": "https://attila5287.github.io/reactmanager/public",
+>>>>>>> 4d6c94780fc1fc0acc63c5358abc4068f77919a0
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
