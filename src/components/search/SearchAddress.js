@@ -16,6 +16,7 @@ function SearchAddress(props) {
 				<div className="form-group col rounded">
 					<input
 						onChange={props.handleInputChange}
+						onSubmit={props.handleSubmit}
 						value={props.search['Address']}
 						name="Address"
 						type="text"

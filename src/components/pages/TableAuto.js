@@ -73,8 +73,13 @@ function TableAuto() {
     }
 
   };
-  
-  const handleInputChange = (event) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
+
+  const handleInputChange = ( event ) => {
+    event.preventDefault();
     const name = event.target.name;
     // console.log( `>> name`, name );
 
@@ -102,38 +107,34 @@ function TableAuto() {
   return (
 		<div>
 			<div className="">
-				<div className="row align-items-center">
-					<div className="col-2 offset-1 align-items-center text-center d-flex justify-content-between">
+				<div className="d-flex flex-row justify-content-center align-items-center">
+					<div className="logo mx-5">
 						<Animated
 							animationIn="fadeInLeft"
 							isVisible={true}
 							animationInDelay={750}
 						>
-								<i className="text-info opac-50 fas fa-filter text-2xl"></i>
+							<i className="text-info opac-50 fas fa-filter text-2xl"></i>
 							<p className="text-lg mb-0">
 								<b> Filter By </b>
 							</p>
 						</Animated>
-						<Animated
-							animationIn="bounceInDown"
-							animationInDelay={500}
-							isVisible={true}
-						>
-							<i className="align-middle text-2xl fas fa-sitemap fa-rotate-270 opac-50"></i>
-						</Animated>
 					</div>
-					<div className="col-8">
+					<div className="search-forms">
 						<SearchFullName
 							search={search['FullName']}
 							handleInputChange={(event) => handleInputChange(event)}
-						/>
+							handleSubmit={(event) => handleSubmit(event)}
+              />
 						<SearchAddress
 							search={search['Address']}
 							handleInputChange={(event) => handleInputChange(event)}
-						/>
+							handleSubmit={(event) => handleSubmit(event)}
+              />
 						<SearchCountry
 							search={search['Country']}
 							handleInputChange={(event) => handleInputChange(event)}
+							handleSubmit={(event) => handleSubmit(event)}
 						/>
 					</div>
 				</div>
