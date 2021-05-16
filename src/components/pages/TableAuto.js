@@ -103,34 +103,26 @@ function TableAuto() {
 		<div>
 			<div className="mini">
 				<div className="row align-items-center">
-					<div className="col-2 align-items-center text-center">
+					<div className="col-2 align-items-center text-center d-flex justify-content-between">
 						<Animated
 							animationIn="bounceInLeft"
 							isVisible={true}
 							animationInDelay={750}
 						>
-							<button
-								className="btn btn-info bg-info disabled shadow-lg"
-								type="button"
-							>
-								<i className="text-secondary fas fa-filter text-4xl"></i>
-							</button>
-							<br />
+								<i className="text-info opac-50 fas fa-filter text-2xl"></i>
 							<p className="text-lg mb-0">
 								<b> Filter By </b>
 							</p>
 						</Animated>
-					</div>
-					<div className="col-1 align-items-center text-left">
 						<Animated
 							animationIn="bounceInDown"
 							animationInDelay={500}
 							isVisible={true}
 						>
-							<i className="align-middle text-4xl fas fa-sitemap fa-rotate-270 opac-50"></i>
+							<i className="align-middle text-3xl fas fa-sitemap fa-rotate-270 opac-50"></i>
 						</Animated>
 					</div>
-					<div className="col-7 offset-1">
+					<div className="col-8">
 						<SearchFullName
 							search={search['FullName']}
 							handleInputChange={(event) => handleInputChange(event)}
@@ -147,7 +139,7 @@ function TableAuto() {
 				</div>
 			</div>
 			<div className="container text-center m-0">
-				<Table responsive striped bordered hover variant="dark" className="m-0">
+				<Table striped bordered hover variant="info" className="m-0">
 					<TableHeader
 						headings={helpers.headings}
 						icons={helpers.headIcons}

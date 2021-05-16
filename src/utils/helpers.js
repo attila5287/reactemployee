@@ -37,14 +37,14 @@ const helpers = {
 		'Phone',
   ],
   headIcons: {
-    'Picture' : 'fas fa-image text-3xl',
-    'FullName' : 'fas fa-id-card text-3xl',
-    'Address' : 'fas fa-map-marked-alt text-3xl',
-    'Country' : 'fas fa-flag text-3xl',
-    'Email' : 'fas fa-envelope text-3xl',
-    'Age' : 'fas fa-birthday-cake text-3xl',
-    'Cell' : 'fas fa-mobile-alt text-3xl',
-    'Phone' : 'fas fa-phone text-3xl',
+    'Picture' : 'fas fa-image text-2xl',
+    'FullName' : 'fas fa-id-card text-2xl',
+    'Address' : 'fas fa-map-marked-alt text-2xl',
+    'Country' : 'fas fa-flag text-2xl',
+    'Email' : 'fas fa-envelope text-2xl',
+    'Age' : 'fas fa-birthday-cake text-2xl',
+    'Cell' : 'fas fa-mobile-alt text-2xl',
+    'Phone' : 'fas fa-phone text-2xl',
     
   }
 };

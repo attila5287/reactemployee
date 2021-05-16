@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 a.post-title {
@@ -52,9 +52,8 @@ a.post-title:focus {
 }
 
 .text-md {
-  font-size: 0.80rem;
+  font-size: 0.95rem;
 }
-
 
 .text-sm {
   font-size: 0.85rem;
@@ -225,4 +224,12 @@ tbody th:first-child {
 }
 tbody td:last-child {
   border-radius: 0 1.75rem  1.75rem  0;
+}
+
+.add-anime {
+  transition: ease-in 0.25s;
+}
+
+.add-anime:hover {
+  transform: scale(1.4, 1.4);
 }

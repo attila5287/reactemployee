@@ -11,15 +11,15 @@ function SearchAddress(props) {
 		>
 			<form className="row align-items-start">
 				<div className="form-group col-2">
-					<h1 className="fas fa-map-marked-alt fa-pull-right"></h1>
+					<h4 className="fas fa-map-marked-alt fa-pull-right"></h4>
 				</div>
-				<div className="form-group col rounded p-1 mb-2">
+				<div className="form-group col rounded">
 					<input
 						onChange={props.handleInputChange}
 						value={props.search['Address']}
 						name="Address"
 						type="text"
-						className="form-control form-control-lg py-1"
+						className="form-control form-control-sm"
 						placeholder="by address"
 					/>
 				</div>

@@ -1,27 +1,33 @@
 const TableHeader = ( props ) => {
   //  console.log(`props`, props)
    return (
-			<thead>
-				<tr>
-					<th className="bg-info align-middle">
-						<i className="text-4xl fab fa-react fa-spin m-0 text-light"></i>
+			<thead className="table-primary">
+				<tr className="py-0">
+					<th className="align-middle">
+						<i className="text-2xl text-secondary fab fa-react fa-spin bg-info p-1 rounded-3xl"></i>
 					</th>
 
 					{props.headings.map((th, index) => (
-						<th className="bg-info text-light" key={index}>
+						<th className="align-middle" key={index}>
 							<button
-								className="btn btn-primary py-2"
+								className="btn btn-sm btn-outline-info px-4 py-0 add-anime my-0"
 								type="button"
 								data-sortby={th}
 								onClick={props.handleSortBy}
 							>
-								<span data-sortby={th} className="text-nowrap text-right">
+								<span
+									data-sortby={th}
+									className="text-2xl text-nowrap text-right  text-secondary py-0"
+								>
 									<i data-sortby={th} className={props.icons[th]}></i>
-									<i data-sortby={th} className="fas fa-sort text-lg mx-1"></i>
+									<i
+										data-sortby={th}
+										className="fas fa-sort mx-2 text-reg text-secondary"
+									></i>
 								</span>
 							</button>
 							<br />
-							<span className="text-secondary opac-30">{th}</span>
+							<span className="d-none text-secondary opac-30">{th}</span>
 						</th>
 					))}
 				</tr>
