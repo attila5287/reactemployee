@@ -17,24 +17,25 @@ function NavTabs() {
 					}
 				>
 					<i className="fas fa-table mx-1"></i>
-					<span className="text-md">
-					</span>
+					<span className="text-md"></span>
 				</Link>
 			</li>
 
 			<li className="nav-item align-items-center">
 				<Link
 					to="/about"
-					className={location.pathname === '/about' ? 'nav-link active bg-info' : 'nav-link'}
+					className={
+						location.pathname === '/about'
+							? 'nav-link active bg-info'
+							: 'nav-link'
+					}
 				>
 					<i className="fas fa-info-circle"></i>
 				</Link>
 			</li>
-			<li className="nav-item align-items-center">
-				<Link className="nav-link disabled">
+			<li className="nav-item nav-link disabled align-items-center">
 					<i className="fab fa-github mx-1"></i>
 					<span className="text-sm">attila5287</span>
-				</Link>
 			</li>
 		</ul>
 	);
