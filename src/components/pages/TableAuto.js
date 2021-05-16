@@ -101,11 +101,11 @@ function TableAuto() {
 
   return (
 		<div>
-			<div className="mini">
+			<div className="">
 				<div className="row align-items-center">
-					<div className="col-2 align-items-center text-center d-flex justify-content-between">
+					<div className="col-2 offset-1 align-items-center text-center d-flex justify-content-between">
 						<Animated
-							animationIn="bounceInLeft"
+							animationIn="fadeInLeft"
 							isVisible={true}
 							animationInDelay={750}
 						>
@@ -119,7 +119,7 @@ function TableAuto() {
 							animationInDelay={500}
 							isVisible={true}
 						>
-							<i className="align-middle text-3xl fas fa-sitemap fa-rotate-270 opac-50"></i>
+							<i className="align-middle text-2xl fas fa-sitemap fa-rotate-270 opac-50"></i>
 						</Animated>
 					</div>
 					<div className="col-8">
