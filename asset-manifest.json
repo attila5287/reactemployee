@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reactmanager/public/static/css/main.543f127d.chunk.css",
-    "main.js": "/reactmanager/public/static/js/main.0928c679.chunk.js",
-    "main.js.map": "/reactmanager/public/static/js/main.0928c679.chunk.js.map",
-    "runtime-main.js": "/reactmanager/public/static/js/runtime-main.6a1d415a.js",
-    "runtime-main.js.map": "/reactmanager/public/static/js/runtime-main.6a1d415a.js.map",
-    "static/css/2.abbc3872.chunk.css": "/reactmanager/public/static/css/2.abbc3872.chunk.css",
-    "static/js/2.eef9e8d3.chunk.js": "/reactmanager/public/static/js/2.eef9e8d3.chunk.js",
-    "static/js/2.eef9e8d3.chunk.js.map": "/reactmanager/public/static/js/2.eef9e8d3.chunk.js.map",
-    "index.html": "/reactmanager/public/index.html",
-    "static/css/2.abbc3872.chunk.css.map": "/reactmanager/public/static/css/2.abbc3872.chunk.css.map",
-    "static/css/main.543f127d.chunk.css.map": "/reactmanager/public/static/css/main.543f127d.chunk.css.map",
-    "static/js/2.eef9e8d3.chunk.js.LICENSE.txt": "/reactmanager/public/static/js/2.eef9e8d3.chunk.js.LICENSE.txt"
+    "main.css": "/reactmanager/build/static/css/main.543f127d.chunk.css",
+    "main.js": "/reactmanager/build/static/js/main.0928c679.chunk.js",
+    "main.js.map": "/reactmanager/build/static/js/main.0928c679.chunk.js.map",
+    "runtime-main.js": "/reactmanager/build/static/js/runtime-main.7113381e.js",
+    "runtime-main.js.map": "/reactmanager/build/static/js/runtime-main.7113381e.js.map",
+    "static/css/2.abbc3872.chunk.css": "/reactmanager/build/static/css/2.abbc3872.chunk.css",
+    "static/js/2.eef9e8d3.chunk.js": "/reactmanager/build/static/js/2.eef9e8d3.chunk.js",
+    "static/js/2.eef9e8d3.chunk.js.map": "/reactmanager/build/static/js/2.eef9e8d3.chunk.js.map",
+    "index.html": "/reactmanager/build/index.html",
+    "static/css/2.abbc3872.chunk.css.map": "/reactmanager/build/static/css/2.abbc3872.chunk.css.map",
+    "static/css/main.543f127d.chunk.css.map": "/reactmanager/build/static/css/main.543f127d.chunk.css.map",
+    "static/js/2.eef9e8d3.chunk.js.LICENSE.txt": "/reactmanager/build/static/js/2.eef9e8d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a1d415a.js",
+    "static/js/runtime-main.7113381e.js",
     "static/css/2.abbc3872.chunk.css",
     "static/js/2.eef9e8d3.chunk.js",
     "static/css/main.543f127d.chunk.css",
