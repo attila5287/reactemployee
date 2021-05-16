@@ -1,6 +1,6 @@
 {
 	"name": "app",
-"homepage": "https://attila5287.github.io/reactmanager/",
+"homepage": "https://attila5287.github.io/reactmanager/public",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
