@@ -135,8 +135,8 @@ function TableAuto() {
 							className='text-right'
 						>
 							<h1 className='title text-info opac-50'>
-                <span className='fas fa-filter' id='filterIcon'>
-                </span>
+                <i className='fas fa-filter' id='filterIcon'>
+                </i>
 							</h1>
 							<h2 className='text-lg mb-0 text-right'>
 								<b> Filter By: </b>
