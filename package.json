@@ -1,6 +1,6 @@
 {
-	"name": "app",
-"homepage": "https://attila5287.github.io/reactemployee/",
+	"name": "reactemployee",
+"homepage": "https://attila5287.github.io/reactemployee/*",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
