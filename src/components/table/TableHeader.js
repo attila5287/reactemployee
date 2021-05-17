@@ -22,12 +22,12 @@ const TableHeader = ( props ) => {
 									<i data-sortby={th} className={props.icons[th]}></i>
 									<i
 										data-sortby={th}
-										className="fas fa-sort text-reg text-dark opac-70 mx-3"
+										className="fas fa-sort text-reg text-dark mx-3"
 									></i>
 								</span>
 							</button>
 							<br />
-							<span className="d-none text-secondary opac-30">{th}</span>
+							<span className="d-none text-secondary">{th}</span>
 						</th>
 					))}
 				</tr>

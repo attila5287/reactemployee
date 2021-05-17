@@ -134,7 +134,7 @@ function TableAuto() {
 							animationInDelay={750}
 							className='text-right'
 						>
-							<h1 className='title text-info opac-50'>
+							<h1 className='title text-info'>
                 <i className='fas fa-filter' id='filterIcon'>
                 </i>
 							</h1>
