@@ -27,18 +27,18 @@ function TableAuto() {
   
   useEffect(() => {
     API
-      .fetch(10)
+      .fetch(20)
       .then( ( res ) => {
         console.log( `res`, res )
         const org = helpers.prep(res);
         setRows( org );
         console.log( `org.length`, org.length )
         console.log( `rows.length`, rows.length )
-        if (org.length===10) {
+        if (org.length===20) {
           setInitial( org );
           console.log( `>> ---org`, org );
           console.log( `>> ---initial`, initial );
-          if ( initial.length<1 && org.length ===10) {
+          if ( initial.length<1 && org.length ===20) {
             setInitial( org );
             console.log( `>> ---initial`, initial );
             
