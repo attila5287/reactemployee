@@ -9,7 +9,7 @@ function App() {
 		<Router>
 			<NavTabs />
 			<Route exact path="/about" component={About} />
-			<Route exact path="/" component={TableAuto} />
+			<Route exact path="/table" component={TableAuto} />
 		</Router>
 	);
 }

@@ -12,13 +12,13 @@ function NavTabs() {
 			<ul className='nav nav-tabs py-0 text-sm shadow-lg'>
 				<li className='nav-item align-items-center'>
 					<Link
-						to='/'
+						to='/table'
 						className={
-							location.pathname === '/' ? 'nav-link active bg-info' : 'nav-link'
+							location.pathname === '/table' ? 'nav-link active bg-info' : 'nav-link'
 						}
 					>
 						<i className='fas fa-table mx-1'></i>
-						<span className='text-md'></span>
+						<span className='text-md'>Table</span>
 					</Link>
 				</li>
 
@@ -26,12 +26,13 @@ function NavTabs() {
 					<Link
 						to='/about'
 						className={
-							location.pathname === '/about'
-								? 'nav-link active bg-info'
-								: 'nav-link'
+              location.pathname === '/about'
+              ? 'nav-link active bg-info'
+              : 'nav-link'
 						}
 					>
 						<i className='fas fa-info-circle'></i>
+            <span className='text-md'>About</span>
 					</Link>
 				</li>
 				<li className='nav-item nav-link disabled align-items-center'>
@@ -47,8 +48,7 @@ function NavTabs() {
 						{' '}
 						<b>Table</b>
 					</u>{' '}
-					icon upper left corner of the nav tabs on top of the screen for the
-					main part of the app.
+					for the main part of the app.
 				</i>
 			</p>
 			<p className='mx-2 mb-0'>
@@ -58,7 +58,7 @@ function NavTabs() {
 					<u>
 						<b>About</b>
 					</u>{' '}
-					with the info icon for developer info and link to code.
+					for developer info and link to code.
 				</i>
 			</p>
 		</header>
