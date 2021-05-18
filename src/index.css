@@ -86,6 +86,9 @@ a.post-title:focus {
   border-radius: 50% 50% 50% 50%;
 }
 
+.rounded-lg {
+  border-radius: 0.25rem;
+}
 .rounded-xl {
   border-radius: 0.5rem;
 }

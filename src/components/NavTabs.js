@@ -14,7 +14,9 @@ function NavTabs() {
 					<Link
 						to='/table'
 						className={
-							location.pathname === '/table' ? 'nav-link active bg-info' : 'nav-link'
+							location.pathname === '/table'
+								? 'nav-link active bg-info'
+								: 'nav-link'
 						}
 					>
 						<i className='fas fa-table mx-1'></i>
@@ -26,40 +28,47 @@ function NavTabs() {
 					<Link
 						to='/about'
 						className={
-              location.pathname === '/about'
-              ? 'nav-link active bg-info'
-              : 'nav-link'
+							location.pathname === '/about'
+								? 'nav-link active bg-info'
+								: 'nav-link'
 						}
 					>
 						<i className='fas fa-info-circle'></i>
-            <span className='text-md'>About</span>
+						<span className='text-md'>About</span>
 					</Link>
+				</li>
+				<li className='nav-item nav-link align-items-center'>
+					<a href='https://reactmanager.herokuapp.com'>
+						<span className='text-light bg-info py-0 px-1 rounded-lg'>
+							<b>h</b>
+            </span>
+					</a>
+				</li>
+				<li className='nav-item nav-link disabled align-items-center'>
+					<i className='fab fa-react fa-spin text-info mx-1'></i>
+					<span className='text-sm'></span>
 				</li>
 				<li className='nav-item nav-link disabled align-items-center'>
 					<i className='fab fa-github mx-1'></i>
 					<span className='text-sm'>attila5287</span>
 				</li>
 			</ul>
-      <p className='mx-2 mb-0'>
-        <span className="fas fa-angle-double-right"></span>
+			<p className='mx-2 mb-0'>
+				<span className='fas fa-exclamation-triangle text-info mx-1'></span>
 				<i>
-					Click on{' '}
-					<u>
-						{' '}
-						<b>Table</b>
-					</u>{' '}
-					for the main part of the app.
+					Blank landing page: Use links above for <b>Table</b> or <b> About</b>.
 				</i>
 			</p>
 			<p className='mx-2 mb-0'>
-        <span className="fas fa-angle-right"></span>
-				<i>
-					Also try{' '}
-					<u>
-						<b>About</b>
-					</u>{' '}
-					for developer info and link to code.
-				</i>
+				<span className='fas fa-angle-right'></span>
+				Check out heroku{' '}
+				<a href='https://reactmanager.herokuapp.com'>
+					<span className='text-light bg-info py-0 px-1 rounded-lg'>
+						<b>h</b>
+					</span>{' '}
+					reactmanager
+				</a>{' '}
+				version.
 			</p>
 		</header>
 	);
