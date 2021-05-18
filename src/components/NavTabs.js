@@ -38,33 +38,49 @@ function NavTabs() {
 					</Link>
 				</li>
 				<li className='nav-item nav-link align-items-center'>
-					<a href='https://reactmanager.herokuapp.com'>
-						<span className='text-light bg-info py-0 px-1 rounded-lg'>
-							<b>h</b>
-            </span>
+					*
+					<a
+						className='nav-a align-items-center'
+						href='https://github.com/attila5287/reactemployee'
+					>
+						<i className='fab fa-github mx-1'></i>
+						<span className='text-md'>attila5287</span>
 					</a>
 				</li>
-				<li className='nav-item nav-link disabled align-items-center'>
-					<i className='fab fa-github mx-1'></i>
-					<span className='text-sm'>attila5287</span>
+				<li className='nav-item nav-link align-items-center'>
+					*
+					<a
+						className='nav-a align-items-center'
+						href='https://attila5287.github.io/reactemployee'
+					>
+						<i className='fab fa-github-square mx-1'></i>
+						<span className='text-md'>gh-pages</span>
+					</a>
+				</li>
+				<li className='nav-item nav-link align-items-center'>
+					*
+					<a
+						className='nav-a align-items-center'
+						href='https://reactmanager.herokuapp.com'
+					>
+						<span className='mx-1 text-reg text-light bg-info p-0 px-1 rounded-lg'>
+							<b>h</b>
+						</span>
+						<span className='text-reg'>heroku</span>
+					</a>
 				</li>
 			</ul>
 			<p className='mx-2 mb-0'>
-				<span className='fas fa-exclamation-triangle text-info mx-1'></span>
+				<span className='fas fa-exclamation-triangle fa-fw text-info mx-1'></span>
 				<i>
-					Blank landing page: Use links above for <b>Table</b> or <b> About</b>.
+					Blank landing page: Go to <b>/Table</b> or <b> /About</b>.
 				</i>
 			</p>
 			<p className='mx-2 mb-0'>
-				<span className='fas fa-angle-right'></span>
-				Check out heroku{' '}
-				<a href='https://reactmanager.herokuapp.com'>
-					<span className='text-light bg-info py-0 px-1 rounded-lg'>
-						<b>h</b>
-					</span>{' '}
-					reactmanager
-				</a>{' '}
-				version.
+        <span className='fas fa-asterisk fa-fw mx-1'></span>
+        <i>
+				External links to browse code or check deployed app on heroku/github-pages.
+        </i>
 			</p>
 		</header>
 	);

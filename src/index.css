@@ -3,12 +3,12 @@ body {
   font-size: 0.85rem;
 }
 
-a.post-title {
+a.nav-a {
   text-decoration: none;
 }
 
-a.post-title:hover,
-a.post-title:focus {
+a.nav-a:hover,
+a.nav-a:focus {
   text-decoration: none;
 }
 

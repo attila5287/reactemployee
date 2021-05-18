@@ -22,7 +22,7 @@ function TableAuto() {
   
   
   const [sorted,
-    setSorted ] = useState( false );
+    setSorted ] = useState( "" );
   
   
   useEffect(() => {
@@ -49,10 +49,11 @@ function TableAuto() {
       .catch((err) => console.log(err));
   }, []);
 
-  const handleSortBy = ( event ) => {
-    const sortField = event.target.dataset.sortby;
-    console.log(`>> sort by `, sortField);
-    const sortedRows = rows.sort((a, b) => {
+  
+  const handleSortBy = (event) => {
+		const sortField = event.target.dataset.sortby;
+		console.log(`>> sort by `, sortField);
+		const sortedRows = rows.sort((a, b) => {
 			if (b[sortField] > a[sortField]) {
 				return -1;
 			}
@@ -61,18 +62,22 @@ function TableAuto() {
 			}
 			return 0;
 		});
-    console.log(`sorted`, sortedRows);
-    if (sorted) {
-      setRows( sortedRows )
-      setSorted( false )
-    } else
-    setRows( sortedRows )
-    setSorted( true )
-    {
-      
+		console.log(`sorted`, sortedRows);
+		if (sorted == '') {
+			setRows(sortedRows);
+			setSorted('ASC');
+    } else {
+      if (sorted == 'ASC') {
+        setRows( sortedRows.reverse() );
+        setSorted( 'DSC' )
+        
+      } else {
+        setRows(sortedRows);
+        setSorted('ASC');
+        
+      }
     }
-
-  };
+	};
   
   const handleInputChange = (event) => {
     const name = event.target.name;
