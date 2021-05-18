@@ -45,10 +45,6 @@ function NavTabs() {
 					</a>
 				</li>
 				<li className='nav-item nav-link disabled align-items-center'>
-					<i className='fab fa-react fa-spin text-info mx-1'></i>
-					<span className='text-sm'></span>
-				</li>
-				<li className='nav-item nav-link disabled align-items-center'>
 					<i className='fab fa-github mx-1'></i>
 					<span className='text-sm'>attila5287</span>
 				</li>
